@@ -40,3 +40,27 @@ main {
   line-height: 25px;
   max-width: 320px;
 }
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+.title-card-content {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  background-color: var(--tertiary-color);
+  box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.178);
+  margin-bottom: 30px;
+}
+.title-card {
+  text-align: center;
+  font-size: 16px;
+  max-width: 230px;
+  color: var(--white-color);
+}
+
+.title-card-color {
+  color: var(--white-color);
+  font-weight: 700;
+}
