@@ -90,7 +90,13 @@ input[type="email"] {
   font-weight: 700;
   transition: transform 0.2s ease-in-out;
 }
-
+.submit:hover {
+  transform: scale(1.03);
+  background-color: var(--secondary-color-dark);
+}
+.submit:active {
+  transform: scale(0.88);
+}
 
 .terms {
   font-size: 12px;
