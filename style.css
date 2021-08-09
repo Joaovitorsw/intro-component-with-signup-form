@@ -1,7 +1,8 @@
 :root {
   --primary-color: hsl(0, 100%, 74%);
   --secondary-color: hsl(154, 59%, 51%);
-  --secondary-color-dark: rgb(43, 182, 121);
+  --secondary-color-light: rgb(43, 182, 121);
+  --secondary-color-dark: rgb(29, 114, 77);
   --tertiary-color: hsl(248, 32%, 49%);
   --neutral-color: hsl(249, 10%, 26%);
   --neutral-color-light: hsl(246, 25%, 77%);
@@ -80,6 +81,7 @@ input[type="email"] {
   border: 1px var(--neutral-color-light) solid;
   outline-color: var(--tertiary-color);
   font-weight: 700;
+  transition: 0.8s background-position;
 }
 
 input[type="text"].active,
@@ -91,13 +93,11 @@ input[type="email"].active {
   background-repeat: no-repeat;
   background-position-y: 50%;
   background-position-x: 95%;
-  transition: 0.8s all;
 }
 
 input[type="text"].active::placeholder,
 input[type="password"].active::placeholder {
   opacity: 0;
-  transition: 0.8s all;
 }
 
 input[type="email"].active::placeholder {
@@ -110,12 +110,22 @@ input[type="email"].active::placeholder {
 }
 .error.active {
   display: inline;
+  animation: fadeIn 0.8s;
   font-size: 12px;
   position: relative;
   color: var(--red-color);
   margin-bottom: 10px;
   right: 10px;
   text-align: right;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .submit {
@@ -131,12 +141,14 @@ input[type="email"].active::placeholder {
 }
 .submit:hover {
   transform: scale(1.03);
-  background-color: var(--secondary-color-dark);
+  background-color: var(--secondary-color-light);
 }
 .submit:active {
   transform: scale(0.88);
 }
-
+.submit:disabled {
+  background-color: var(--secondary-color-dark);
+}
 .terms {
   font-size: 12px;
   max-width: 270px;
@@ -162,13 +174,14 @@ input[type="password"],
 input[type="email"] {
   border-radius: 7px;
 }
+
 @media screen and (min-width: 750px) {
   body {
     padding: 20px;
     background-image: url(images/bg-intro-desktop.png);
     background-color: var(--primary-color);
   }
- main {
+  main {
     flex-direction: row;
     margin-top: 90px;
     justify-content: space-around;
