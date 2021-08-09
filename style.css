@@ -177,7 +177,7 @@ input[type="email"] {
 
 @media screen and (min-width: 750px) {
   body {
-    padding: 20px;
+    padding: 50px;
     background-image: url(images/bg-intro-desktop.png);
     background-color: var(--primary-color);
   }
@@ -188,7 +188,7 @@ input[type="email"] {
   }
   .text-content {
     justify-content: center;
-    margin-right: 20px;
+    margin-right: 25px;
   }
   .title-text {
     font-size: 50px;
