@@ -16,8 +16,8 @@
 </p>
 
 <p align="center"> 
-  <img alt="Top Language" src="https://img.shields.io/github/languages/top/Joaovitorsw/intro-component-with-signup-form-master?color=3498db&style=for-the-badge">
-  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Joaovitorsw/intro-component-with-signup-form-master?color=3498db&style=for-the-badge&label=Ultimo%20Commit">   
+  <img alt="Top Language" src="https://img.shields.io/github/languages/top/Joaovitorsw/intro-component-with-signup-form?color=3498db&style=for-the-badge">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Joaovitorsw/intro-component-with-signup-form?color=3498db&style=for-the-badge&label=Ultimo%20Commit">   
   <a href="https://github.com/Joaovitorsw">
     <img alt="Developed by João Vitor" src="https://img.shields.io/badge/Developer-João_Vitor-%3498db?color=3498db&style=for-the-badge&label=Desenvolvedor">
   </a>  
