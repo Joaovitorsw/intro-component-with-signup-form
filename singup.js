@@ -7,6 +7,8 @@ const $inputPassword = document.querySelector("input[type=password]");
 const mailPatern =
   /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
+$submit.addEventListener("click", buttonPress);
+
 function buttonPress() {
   const $inputTextsValue = [...$inputTexts];
   if ($inputTextsValue.includes("") || !mailPatern.test($inputEmail.value)) {
