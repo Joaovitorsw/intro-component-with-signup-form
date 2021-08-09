@@ -73,20 +73,26 @@ Minha versão da aplicação proposta pelo [Frontend Mentor](https://www.fronten
 | [CSS3](https://www.w3schools.com/css/) |
 | [JavaScript ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript) |
 
-
 </div>
 
 ---
+
 ## :brain: _Conceitos Aplicados_
 
 <div align="center">
 
-| :page_facing_up: |
-| :--------------: |
-|     Flexbox      |
-|     Position     |
-|   MediaQuerry    |
-|  EventListiner   |
+|  :page_facing_up:   |
+| :-----------------: |
+|    Mobile First     |
+|     Key concept     |
+|  Pseudo Selectors   |
+|    CSS Box Model    |
+|   Size Properties   |
+| Element visibility  |
+|       Flexbox       |
+| JavaScript Closures |
+|  Callback Function  |
+|    EventListiner    |
 
 </div>
 
@@ -96,10 +102,10 @@ Minha versão da aplicação proposta pelo [Frontend Mentor](https://www.fronten
 
 <div align="center">
 
-|            :page_facing_up:             |
-| :-------------------------------------: |
-|   Validar se um campo está preenchido   |
-| Validar se o endereço de email é valido |
+|                   :page_facing_up:                   |
+| :--------------------------------------------------: |
+|         Validar se um campo está preenchido          |
+| Validar se o valor preenchido obdece ao padrão Regex |
 
 </div>
 
