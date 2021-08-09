@@ -7,8 +7,27 @@ const $inputPassword = document.querySelector("input[type=password]");
 const mailPatern =
   /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
-
-  
+function buttonPress() {
+  const $inputTextsValue = [...$inputTexts];
+  if ($inputTextsValue.includes("") || !mailPatern.test($inputEmail.value)) {
+    activeClass($inputEmail, "active");
+    activeClass($inputPassword, "active");
+    $inputEmail.placeholder = "email@example/com";
+    [$inputTexts, $errorMensagens].forEach(($array) =>
+      activeClassArray($array)
+    );
+  } else {
+    $inputEmail.placeholder = "Email Address";
+    [$inputTexts, $errorMensagens].forEach(($array) =>
+      removeClassArray($array)
+    );
+    removeClass($inputEmail, "active");
+    removeClass($inputPassword, "active");
+    $inputTexts.forEach(($input) => inputReset($input));
+    inputReset($inputEmail);
+    inputReset($inputPassword);
+  }
+}
 
 function activeClassArray($array) {
   $array.forEach(($element) => {
@@ -20,8 +39,6 @@ function removeClassArray($array) {
     removeClass($element, "active");
   });
 }
-
-
 
 function activeClass($element, status) {
   $element.classList.add(status);
