@@ -25,6 +25,8 @@ $inputPassword.addEventListener("input", ($inputPassword) =>
   passwordIsStrong($inputPassword.target.value)
 );
 
+$submit.addEventListener("click", inputsReset);
+
 function buttonStatus() {
   if (
     $FirstName.classList.contains("valid") &&
@@ -79,6 +81,13 @@ function lastNameIsValid(text) {
     activeClass($LastName, "valid");
   }
   buttonStatus();
+}
+
+function inputsReset() {
+  $FirstName.value = "";
+  $LastName.value = "";
+  $inputEmail.value = "";
+  $inputPassword.value = "";
 }
 
 function activeClass($element, status) {
