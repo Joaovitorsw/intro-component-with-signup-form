@@ -6,6 +6,7 @@
   --neutral-color: hsl(249, 10%, 26%);
   --neutral-color-light: hsl(246, 25%, 77%);
   --white-color: white;
+  --red-color: #fc6260;
 }
 
 body {
@@ -43,6 +44,7 @@ main {
 .card-content {
   display: flex;
   flex-direction: column;
+  transition: height 0.5s;
 }
 .title-card-content {
   display: flex;
@@ -75,10 +77,47 @@ input[type="text"],
 input[type="password"],
 input[type="email"] {
   padding: 15px;
-  border: none;
+  border: 1px var(--neutral-color-light) solid;
   outline-color: var(--tertiary-color);
   font-weight: 700;
 }
+
+input[type="text"].active,
+input[type="password"].active,
+input[type="email"].active {
+  border: 2px var(--red-color) solid;
+  outline: none;
+  background-image: url(images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-position-x: 95%;
+  transition: 0.8s all;
+}
+
+input[type="text"].active::placeholder,
+input[type="password"].active::placeholder {
+  opacity: 0;
+  transition: 0.8s all;
+}
+
+input[type="email"].active::placeholder {
+  color: var(--red-color);
+  transition: color 0.8s;
+}
+
+.error {
+  display: none;
+}
+.error.active {
+  display: inline;
+  font-size: 12px;
+  position: relative;
+  color: var(--red-color);
+  margin-bottom: 10px;
+  right: 10px;
+  text-align: right;
+}
+
 .submit {
   margin-top: 10px;
   padding: 15px;
@@ -122,4 +161,12 @@ input[type="text"],
 input[type="password"],
 input[type="email"] {
   border-radius: 7px;
+}
+@media screen and (min-width: 750px) {
+body {
+  padding: 20px;
+  background-image: url(images/bg-intro-desktop.png);
+  background-color: var(--primary-color);
+}
+ 
 }
