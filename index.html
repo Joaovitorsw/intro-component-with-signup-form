@@ -1,38 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Intro component with sign up form</title>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="reset.css">
-   <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <main>
-    <div class="text-content">
-      <h1 class="title-text">Learn to code by watching others</h1>
-      <p class="paragraph-text">
-        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
-        but understanding how developers think is invaluable.
-      </p>
-    </div>
-    <div class="card-content">
-        <div class="title-card-content">
-          <h1 class="title-card"><span class="title-card-color">Try it free 7 days</span> then $20/mo. thereafter</h1>
-        </div>
-      <div class="mini-card-content">
-        <input type="text" placeholder="First Name"></input>
-        <input type="text" placeholder="Last Name"></input>
-        <input type="email"placeholder="Email Address"></input>
-        <input type="password"placeholder="Password"></input>
-        <button class="submit">Claim your free trial</button>
-        <span class="terms">By clicking the button, you are agreeing to our <span class="terms-color">Terms and Services</span></span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="text-content">
+        <h1 class="title-text">Learn to code by watching others</h1>
+        <p class="paragraph-text">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
       </div>
-    </div>
-  </main>
-</body>
+      <div class="card-content">
+        <div class="title-card-content">
+          <h1 class="title-card">
+            <span class="title-card-color">Try it free 7 days</span>then $20/mo.
+            thereafter
+          </h1>
+        </div>
+        <div class="mini-card-content">
+          <input type="text" placeholder="First Name"></input>
+          <span class="error">First Name cannot be empety</span>
+          <input type="text" placeholder="Last Name"></input>
+          <span class="error">Last Name cannot be empety</span>
+          <input type="email"placeholder="Email Address"></input>
+          <span class="error ">Looks like this is not an email</span>
+          <input type="password"placeholder="Password"></input>
+          <span class="error">Password cannot be empety</span>
+          <button class="submit">Claim your free trial</button>
+          <span class="terms">By clicking the button, you are agreeing to our<span class="terms-color">Terms and Services</span></span>
+        </div>
+      </div>
+    </main>
+    <script src="singup.js"></script>
+  </body>
 </html>
