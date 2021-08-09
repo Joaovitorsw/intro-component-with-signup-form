@@ -88,6 +88,8 @@ function inputsReset() {
   $LastName.value = "";
   $inputEmail.value = "";
   $inputPassword.value = "";
+  removeClass($FirstName, "valid");
+  buttonStatus();
 }
 
 function activeClass($element, status) {
