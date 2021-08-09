@@ -183,13 +183,11 @@ input[type="email"] {
   }
   main {
     flex-direction: row;
-    margin-top: 90px;
     justify-content: space-around;
-    max-height: 500px;
+    height: 650px;
   }
   .text-content {
-    text-align: unset;
-    position: relative;
+    justify-content: center;
     margin-right: 20px;
   }
   .title-text {
