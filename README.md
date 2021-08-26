@@ -81,18 +81,23 @@ Minha versão da aplicação proposta pelo [Frontend Mentor](https://www.fronten
 
 <div align="center">
 
-|  :page_facing_up:   |
-| :-----------------: |
-|    Mobile First     |
-|     Key concept     |
-|  Pseudo Selectors   |
-|    CSS Box Model    |
-|   Size Properties   |
-| Element visibility  |
-|       Flexbox       |
-| JavaScript Closures |
-|  Callback Function  |
-|    EventListiner    |
+|  :page_facing_up:  |
+| :----------------: |
+|    Mobile First    |
+|     HTML Class     |
+|     CSS Class      |
+|      Position      |
+|  Background Image  |
+|  Pseudo Selectors  |
+|   CSS Box Model    |
+|  Size Properties   |
+|      Flexbox       |
+|     MediaQuery     |
+|    Atomic Comit    |
+| Element visibility |
+|    Keyframe        |
+| Callback Function  |
+|   EventListiner    |
 
 </div>
 
